@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import HighScoresTable from './HighScoreTable';
+import WorldWideTable from './WorldWideTable';
 import ScoresOrderButton from './ScoresOrderButton';
 import scores from './scores';
 
@@ -15,15 +16,10 @@ function App() {
     <div className="App">
       <h1 className="title">High Scores per Country</h1>
       <ScoresOrderButton
-     
-     
-            handleClick={toggleScoreOrder}
-  
-  
-                  descending={descending}
-     
-     
+        handleClick={toggleScoreOrder}
+        descending={descending}
       />
+      <WorldWideTable descending={descending} scores={scores} />
       {scores
         // sort by name
         .sort((a, b) => a.name.localeCompare(b.name))
