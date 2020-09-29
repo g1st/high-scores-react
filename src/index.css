@@ -45,8 +45,6 @@ table tr:nth-child(2n) {
   background-color: lightgrey;
 }
 
-
-
 .player-name {
   text-transform: uppercase;
   width: 50%;
@@ -55,4 +53,26 @@ table tr:nth-child(2n) {
 .player-score {
   color: darkred;
   width: 50%;
+}
+
+.order {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.btn {
+  font-family: 'Press Start 2P',
+    cursive;
+  padding: 1em 1.25em;
+  background-color: #fff;
+  font-size: 1em;
+  border-width: 4px;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
 }

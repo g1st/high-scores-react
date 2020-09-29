@@ -2,9 +2,11 @@ import React from 'react';
 
 const ScoresOrderButton = ({ handleClick, descending }) => {
   return (
-    <button onClick={handleClick}>
-      Order scores {descending ? 'ascending' : 'descending'}
-    </button>
+    <div className="order">
+      <button className="btn" onClick={handleClick}>
+        Order scores {descending ? 'ascending' : 'descending'}
+      </button>
+    </div>
   );
 };
 
